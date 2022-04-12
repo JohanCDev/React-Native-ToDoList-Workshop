@@ -90,7 +90,6 @@ export default function App() {
         {allTasks.length === 0 &&
         <KeyboardAvoidingView
           behavior={Platform.OS === "ios" ? "padding" : "height"}
-
           style={styles.imageWrapper}
         >
           <Image source={require("./assets/illustration.png")} style={styles.image}/>
