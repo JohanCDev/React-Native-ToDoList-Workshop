@@ -6,6 +6,7 @@ In this workshop you will:
 - Discover a language that allow you to code application on different platforms
 - Discover hooks to replace classes
 - Learn how to do animations
+- Learn how to use a Typing overlay to correctly use your variables
 
 ## What is React-Native
 
@@ -28,3 +29,11 @@ To do this, simply run `expo start`.
 Press `d` to open developer tools and enable `tunnel mode`.
 
 Then, scan the qr code on your phone to have your new application. (On your camera for iOS and in Expo App for Android)
+
+## Step 1 - Create your first view
+
+Start by creating a Typescript basic app with `expo init MyToDoListApp`
+
+Try to launch it on your phone, you should see something like this
+
+![Alt Text](./ScreenShots/Basic.jpeg)
