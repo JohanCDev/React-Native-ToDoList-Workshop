@@ -1,10 +1,10 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
+  "expoServerPort": null,
   "packagerPort": 19000,
   "expoServerNgrokUrl": "https://hw-up2.anonymous.workshoprn.exp.direct",
   "packagerNgrokUrl": "https://packager.hw-up2.anonymous.workshoprn.exp.direct",
-  "ngrokPid": 40179,
+  "ngrokPid": 80039,
   "packagerPid": null,
   "webpackServerPort": null
 }

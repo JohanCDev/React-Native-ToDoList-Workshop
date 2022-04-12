@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, ScrollView, Keyboard, TouchableOpacity, TextInput, KeyboardAvoidingView, Platform, Image, LayoutAnimation, Animated } from 'react-native';
+import {LinearGradient} from 'expo-linear-gradient';
 import Task from './Components/Task'
 
 interface BottomProps {
@@ -82,26 +83,30 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>Todo List</Text>
-      {allTasks.length > 0 && <DisplayList allTasks={allTasks} removeTask={removeTask} selectedColor={selectedColor}/>}
-      {allTasks.length === 0 &&
-      <KeyboardAvoidingView
-        behavior={Platform.OS === "ios" ? "padding" : "height"}
+    <LinearGradient colors={["#FFE5D4", "#FFB5A4"]} style={styles.container}>
+      <SafeAreaView style={styles.mainView}>
+        <Text style={styles.title}>Todo List</Text>
+        {allTasks.length > 0 && <DisplayList allTasks={allTasks} removeTask={removeTask} selectedColor={selectedColor}/>}
+        {allTasks.length === 0 &&
+        <KeyboardAvoidingView
+          behavior={Platform.OS === "ios" ? "padding" : "height"}
 
-        style={styles.imageWrapper}
-      >
-        <Image source={require("./assets/illustration.png")} style={styles.image}/>
-      </KeyboardAvoidingView>}
-      <BottomScreen task={task} setTask={setTask} addTask={addTask} selectedColor={selectedColor} setSelectedColor={setSelectedColor} />
-    </SafeAreaView>
+          style={styles.imageWrapper}
+        >
+          <Image source={require("./assets/illustration.png")} style={styles.image}/>
+        </KeyboardAvoidingView>}
+        <BottomScreen task={task} setTask={setTask} addTask={addTask} selectedColor={selectedColor} setSelectedColor={setSelectedColor} />
+      </SafeAreaView>
+    </LinearGradient>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FFE5D4',
+  },
+  mainView: {
+    flex: 1,
   },
   title: {
     fontSize: 30,
