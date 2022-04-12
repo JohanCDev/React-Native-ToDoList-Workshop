@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, SafeAreaView, ScrollView, Keyboard, TouchableOpacity, TextInput, KeyboardAvoidingView, Platform, Image } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, ScrollView, Keyboard, TouchableOpacity, TextInput, KeyboardAvoidingView, Platform, Image, LayoutAnimation, Animated } from 'react-native';
 import Task from './Components/Task'
 
 interface BottomProps {
@@ -37,7 +37,7 @@ function BottomScreen(props: BottomProps)
 function DisplayList(props: ListProps)
 {
   return (<ScrollView>
-    <View style={styles.tasksWrapper}>
+    <Animated.View style={styles.tasksWrapper}>
       {
         props.allTasks.map((item, index) => {
           return (
@@ -47,7 +47,7 @@ function DisplayList(props: ListProps)
         }
         )
       }
-    </View>
+    </Animated.View>
   </ScrollView>
   )
 }
@@ -58,8 +58,19 @@ export default function App() {
   const [selectedColor, setSelectedColor] = useState("#8BC34A")
   const [allTasks, setAllTasks] = useState<Array<string>>([])
 
+  const setAnimation = () => {
+    LayoutAnimation.configureNext({
+      duration: 250,
+      create: {
+        property: LayoutAnimation.Properties.opacity,
+        springDamping: 0.7,
+      },
+    });
+  };
+
   const addTask = () => {
     Keyboard.dismiss();
+    setAnimation();
     setAllTasks([...allTasks, task])
     setTask("")
   }
