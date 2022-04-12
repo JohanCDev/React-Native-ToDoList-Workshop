@@ -54,3 +54,109 @@ A famous one helps you doing a linear gradient for your views, try to install it
 
 You can easily have something like this.
 ![Alt Text](./ScreenShots/StyledView.jpeg)
+
+## Step 3 - Let's start the To Do list !
+
+Don't imagine a fancy display of all your tasks for now.
+
+In this step, you will just try to get an input from the user and log it when your user presses a button of validation.
+
+To do this, you will need a special Component to receive users input and a button to send it to your list. Use a `TouchableOpacity` instead of a `Button`, it's way more stylable and usable. Add these to the bottom of your screen, as it is in most applications with user inputs
+
+React-Native has completely new way to use variables' states. It's called [**hooks**](https://en.reactjs.org/docs/hooks-intro.html). Try to use them to handle the user input, you will need them later in this workshop !
+
+**Small bonus**
+Try to send the input with the `send` button that you can sometimes see on your keyboard. Find out how to display it and how to handle when it's pressed !
+
+## Step 4 - Display the To Do List in the application
+
+You will still not have a fancy display in this step, but at least you will have one.
+
+First, store every new tasks in an array. *It would be nice to use hooks here too*. You can do a function doing thisto improve the lisibility of your code.
+
+**You can pass functions as parameters to other functions, like pointers in C/C++ but it's done automtically here !**
+
+Next, try to display them using a Component made for this. Be aware to find a way of making your view Scrollable *or your to do list will not be infinite...* You can do this with a Component made specially for this, or with a Component doing both.
+
+Simply use a `Text` Component to display them. It will not really be good looking but at least, you will see it.
+
+## Step 5 - Time to create your own Component
+
+Create a new file called:
+
+- Task.tsx if you are using TypeScript
+- Task.jsx if you are using JavaScript
+
+Create your own Component in this file simply by creating a function called `Task`.
+
+Components works exactly like your main view, you just have to assemble different React
+Components and they will be displayed each time you call them. Exectly like `View`or `Text`.
+
+You have to find a way to pass the text corresponding to a single task in this Component.
+
+Call this component instead of the `Text` that you use in Step 3.
+
+Try to get a similar result as the one in the step 4.
+
+## Step 6 - Upgrade your component
+
+**It's now time for us to make a cool to do list !**
+
+Use other basic Component to make yours look better.
+
+Start by adding a button at the right of your Component,
+it will be used to remove the task from your list. Just log a message of deletion when you press it,
+we will do the back end after.
+
+You can also add a square of color at the left of your Component.
+For the moment, it will just be used as a style element, you can develop it's functionment
+after this workshop, we will not have time to do it now.
+
+**Don't forget to make your text still lisible, it's the main part of your to do list !**
+
+Add a shadow to your Component to make it *floating* on your screen
+
+You should now see a beautiful to do list, only the front end but it looks great !
+
+## Step 7 - Remove taks when they are done
+
+Try to make a function just like the one of the Step 4, but this time it will
+remove your task from your array.
+
+## Step 8 - Add a welcoming page
+
+Your app seems a little bit sad and empty without any ongoing tasks, how could you fix that ?
+
+**I know !**, you could add an image in the case that your list is empty ! Instead of trying to display list elements.
+
+React-Native has something called `conditionnal rendering`, use it to accomplish this.
+
+## FINAL STEP
+
+Don't you think that your keyboard is a bit invasive ? A special Component exists to do this. Find it and use it.
+
+
+## 🎉 Congratulations !
+
+**You now have a bautiful functionnal ToDo list application available on both Android and iOS that you can use to organize your work sessions at Epitech !**
+
+There is still plenty more to learn about react-native, participating to community packages is a good start.
+
+If you want to use an easier package manager in the future, think of [React-native Cli](https://reactnative.dev/docs/environment-setup)
+
+A couple of problems made me choose Expo instead of this client:
+- React-Native Cli allows you to test your application on iOS only if you have a MacOS operating system.
+- It's longer to setup.
+
+Some benefits are:
+- More packages are available.
+- The navigation between screens is easier.
+- Apps are available 3 days (on iOS at least) without the packager running next to you. You can use your app easily !
+
+## To go further
+
+It seems a bit sad without any animation don't you think ? It's ok if you don't want to,
+you worked well but if you want to improve your applications with a few little steps you can !
+
+Add animations to smooth every adding or removing tasks, it will make it cleaner and your app will step up easily.
+React-Native has a Framework to make easy animations. Check [this page](https://reactnative.dev/docs/animations) to know every thing about animations.
