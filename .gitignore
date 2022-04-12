@@ -1,0 +1,5 @@
+finalProj/.expo/
+finalProj/node_modules/
+finalProj/yarn.lock
+.vscode/
+.DS_Store
