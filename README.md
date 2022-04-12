@@ -160,3 +160,8 @@ you worked well but if you want to improve your applications with a few little s
 
 Add animations to smooth every adding or removing tasks, it will make it cleaner and your app will step up easily.
 React-Native has a Framework to make easy animations. Check [this page](https://reactnative.dev/docs/animations) to know every thing about animations.
+
+## Authors
+
+| [<img src="https://github.com/JohanCDev.png?size=85" width=85><br><sub>Johan CHRILLESEN</sub>](https://github.com/JohanCDev) |
+| :---: |
