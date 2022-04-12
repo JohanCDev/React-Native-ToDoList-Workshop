@@ -30,10 +30,26 @@ Press `d` to open developer tools and enable `tunnel mode`.
 
 Then, scan the qr code on your phone to have your new application. (On your camera for iOS and in Expo App for Android)
 
-## Step 1 - Create your first view
+## Step 1 - Create your first Application
 
 Start by creating a Typescript basic app with `expo init MyToDoListApp`
 
 Try to launch it on your phone, you should see something like this
 
 ![Alt Text](./ScreenShots/Basic.jpeg)
+
+Congrats ! You created an application !
+
+## Step 2 - Create a basic view around your To Do list
+
+Change the colors and properties of your view to have a basic view that will be around your future todo list.
+
+Add a Title in the upper left corner, try to make it visible but not invasive.
+
+Style your background and your text to make your launching view welcoming for users.
+
+One of the power of React-Native is it's community, developers around the world share packages that you can use in your applications.
+
+A famous one helps you doing a linear gradient for your views, try to install it and use it for your background if you want !
+
+You can easily have something like this.
