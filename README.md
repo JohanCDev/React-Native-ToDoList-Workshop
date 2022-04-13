@@ -53,6 +53,7 @@ One of the power of React-Native is it's community, developers around the world 
 A famous one helps you doing a linear gradient for your views, try to install it and use it for your background if you want !
 
 You can easily have something like this.
+
 ![Alt Text](./ScreenShots/StyledView.jpeg)
 
 ## Step 3 - Let's start the To Do list !
@@ -65,6 +66,8 @@ To do this, you will need a special Component to receive users input and a butto
 
 React-Native has completely new way to use variables' states. It's called [**hooks**](https://en.reactjs.org/docs/hooks-intro.html). Try to use them to handle the user input, you will need them later in this workshop !
 
+![Alt Text](./ScreenShots/input.jpeg)
+
 **Small bonus**
 Try to send the input with the `send` button that you can sometimes see on your keyboard. Find out how to display it and how to handle when it's pressed !
 
@@ -72,13 +75,15 @@ Try to send the input with the `send` button that you can sometimes see on your 
 
 You will still not have a fancy display in this step, but at least you will have one.
 
-First, store every new tasks in an array. *It would be nice to use hooks here too*. You can do a function doing thisto improve the lisibility of your code.
+First, store every new tasks in an array. *It would be nice to use hooks here too*. You can do a function doing this to improve the lisibility of your code.
 
-**You can pass functions as parameters to other functions, like pointers in C/C++ but it's done automtically here !**
+**You can pass functions as parameters to other functions, like pointers in C/C++ but pointers are done automtically here !**
 
 Next, try to display them using a Component made for this. Be aware to find a way of making your view Scrollable *or your to do list will not be infinite...* You can do this with a Component made specially for this, or with a Component doing both.
 
 Simply use a `Text` Component to display them. It will not really be good looking but at least, you will see it.
+
+![Alt Text](./ScreenShots/AddATask.gif)
 
 ## Step 5 - Time to create your own Component
 
@@ -118,6 +123,8 @@ Add a shadow to your Component to make it *floating* on your screen
 
 You should now see a beautiful to do list, only the front end but it looks great !
 
+![Alt Text](./ScreenShots/Component.jpeg)
+
 ## Step 7 - Remove taks when they are done
 
 Try to make a function just like the one of the Step 4, but this time it will
@@ -125,20 +132,22 @@ remove your task from your array.
 
 ## Step 8 - Add a welcoming page
 
-Your app seems a little bit sad and empty without any ongoing tasks, how could you fix that ?
+Your app seems a little bit sad and empty without any tasks, how could you fix that ?
 
 **I know !**, you could add an image in the case that your list is empty ! Instead of trying to display list elements.
 
 React-Native has something called `conditionnal rendering`, use it to accomplish this.
 
+![Alt Text](./ScreenShots/ImageEnd.jpeg)
+
 ## FINAL STEP
 
-Don't you think that your keyboard is a bit invasive ? A special Component exists to do this. Find it and use it.
+Your keyboard might be over other components when you use it ? A special Component exists to easily move elements over it. Find it and use it.
 
 
 ## 🎉 Congratulations !
 
-**You now have a bautiful functionnal ToDo list application available on both Android and iOS that you can use to organize your work sessions at Epitech !**
+**You now have a beautiful functionnal ToDo list application available on both Android and iOS that you can use to organize your work sessions at Epitech !**
 
 There is still plenty more to learn about react-native, participating to community packages is a good start.
 
