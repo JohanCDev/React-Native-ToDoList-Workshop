@@ -1,4 +1,4 @@
-# Workshop React Native: Create a to do list
+# Workshop React Native: Create a to do list ⚛️
 Be sure to install every [prerequisites](./SETUP.md) in order to complete the workshop
 
 In this workshop you will:
@@ -66,9 +66,12 @@ To do this, you will need a special Component to receive users input and a butto
 
 React-Native has completely new way to use variables' states. It's called [**hooks**](https://en.reactjs.org/docs/hooks-intro.html). Try to use them to handle the user input, you will need them later in this workshop !
 
-![Alt Text](./ScreenShots/input.jpeg)
+![Alt Text](./ScreenShots/input.png)
 
-**Small bonus**
+**⚛️ Bonuses**
+
+Have you tried to create an empty task ? One filled with spaces ? You might not want it to create a task in these cases, find a way to handle annoying cases like these.
+
 Try to send the input with the `send` button that you can sometimes see on your keyboard. Find out how to display it and how to handle when it's pressed !
 
 ## Step 4 - Display the To Do List in the application
@@ -77,7 +80,7 @@ You will still not have a fancy display in this step, but at least you will have
 
 First, store every new tasks in an array. *It would be nice to use hooks here too*. You can do a function doing this to improve the lisibility of your code.
 
-**You can pass functions as parameters to other functions, like pointers in C/C++ but pointers are done automtically here !**
+**💡 You can pass functions as parameters to other functions, like pointers in C/C++ but pointers are done automtically here !**
 
 Next, try to display them using a Component made for this. Be aware to find a way of making your view Scrollable *or your to do list will not be infinite...* You can do this with a Component made specially for this, or with a Component doing both.
 
@@ -105,7 +108,7 @@ Try to get a similar result as the one in the step 4.
 
 ## Step 6 - Upgrade your component
 
-**It's now time for us to make a cool to do list !**
+**🤝 It's now time for us to make a cool to do list !**
 
 Use other basic Component to make yours look better.
 
@@ -117,7 +120,7 @@ You can also add a square of color at the left of your Component.
 For the moment, it will just be used as a style element, you can develop it's functionment
 after this workshop, we will not have time to do it now.
 
-**Don't forget to make your text still lisible, it's the main part of your to do list !**
+**💡 Don't forget to make your text still lisible, it's the main part of your to do list !**
 
 Add a shadow to your Component to make it *floating* on your screen
 
@@ -130,11 +133,16 @@ You should now see a beautiful to do list, only the front end but it looks great
 Try to make a function just like the one of the Step 4, but this time it will
 remove your task from your array.
 
+**⚛️ Bonus**
+
+Imagine pressing the removing button not on purpose... Not cool uh ?
+Try to display an alert that waits for a validation from the user 😉
+
 ## Step 8 - Add a welcoming page
 
 Your app seems a little bit sad and empty without any tasks, how could you fix that ?
 
-**I know !**, you could add an image in the case that your list is empty ! Instead of trying to display list elements.
+**💡 I know !**, you could add an image in the case that your list is empty ! Instead of trying to display list elements.
 
 React-Native has something called `conditionnal rendering`, use it to accomplish this.
 
@@ -147,7 +155,7 @@ Your keyboard might be over other components when you use it ? A special Compone
 
 ## 🎉 Congratulations !
 
-**You now have a beautiful functionnal ToDo list application available on both Android and iOS that you can use to organize your work sessions at Epitech !**
+**📱 You now have a beautiful functionnal ToDo list application available on both Android and iOS that you can use to organize your work sessions at Epitech !**
 
 There is still plenty more to learn about react-native, participating to community packages is a good start.
 

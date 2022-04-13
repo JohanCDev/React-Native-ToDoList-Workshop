@@ -26,7 +26,7 @@ function BottomScreen(props: BottomProps)
     behavior={Platform.OS === "ios" ? "padding" : "height"}
     style={styles.writeTaskWrapper}
   >
-      <TextInput style={styles.input} placeholder={'Write a task'} value={props.task} maxLength={50} onChangeText={text => props.setTask(text)} />
+      <TextInput style={styles.input} placeholder={'Write a task'} value={props.task} maxLength={50} onChangeText={text => props.setTask(text)} returnKeyType="send" onSubmitEditing={() => props.addTask()} />
       <TouchableOpacity onPress={() => props.addTask()}>
         <View style={styles.addWrapper}>
           <Text style={styles.addText}>+</Text>
@@ -72,7 +72,8 @@ export default function App() {
   const addTask = () => {
     Keyboard.dismiss();
     setAnimation();
-    setAllTasks([...allTasks, task])
+    if (!(task.length === 0 || task.trim().length === 0))
+      setAllTasks([...allTasks, task])
     setTask("")
   }
 
