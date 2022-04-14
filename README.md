@@ -64,9 +64,9 @@ In this step, you will just try to get an input from the user and log it when yo
 
 To do this, you will need a special Component to receive users input and a button to send it to your list. Use a `TouchableOpacity` instead of a `Button`, it's way more stylable and usable. Add these to the bottom of your screen, as it is in most applications with user inputs
 
-React-Native has completely new way to use variables' states. It's called [**hooks**](https://en.reactjs.org/docs/hooks-intro.html). Try to use them to handle the user input, you will need them later in this workshop !
+Be sure to always see what you are writing ! A special Component exists to easily move the user input above the keyboard.
 
-![Alt Text](./ScreenShots/input.png)
+React-Native has completely new way to use variables' states. It's called [**hooks**](https://en.reactjs.org/docs/hooks-intro.html). Try to use them to handle the user input, you will need them later in this workshop !
 
 **⚛️ Bonuses**
 
@@ -74,6 +74,7 @@ Have you tried to create an empty task ? One filled with spaces ? You might not 
 
 Try to send the input with the `send` button that you can sometimes see on your keyboard. Find out how to display it and how to handle when it's pressed !
 
+![Alt Text](./ScreenShots/input.png)
 ## Step 4 - Display the To Do List in the application
 
 You will still not have a fancy display in this step, but at least you will have one.
@@ -89,6 +90,12 @@ Simply use a `Text` Component to display them. It will not really be good lookin
 ![Alt Text](./ScreenShots/AddATask.gif)
 
 ## Step 5 - Time to create your own Component
+
+**Important**
+
+From now you should start to have a heavy main function. If you haven't already, try to refacto your code to make it clearer.
+
+**Next**
 
 Create a new file called:
 
