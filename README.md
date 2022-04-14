@@ -109,9 +109,9 @@ Components and they will be displayed each time you call them. Exectly like `Vie
 
 You have to find a way to pass the text corresponding to a single task in this Component.
 
-Call this component instead of the `Text` that you use in Step 3.
+Call this component instead of the `Text` that you use in [Step 3](./README.md#step-3---lets-start-the-to-do-list).
 
-Try to get a similar result as the one in the step 4.
+Try to get a similar result as the one in the [Step 4](./README.md#step-4---display-the-to-do-list-in-the-application).
 
 ## Step 6 - Upgrade your component
 
@@ -137,7 +137,7 @@ You should now see a beautiful to do list, only the front end but it looks great
 
 ## Step 7 - Remove taks when they are done
 
-Try to make a function just like the one of the Step 4, but this time it will
+Try to make a function just like the one of the [Step 4](./README.md#step-4---display-the-to-do-list-in-the-application), but this time it will
 remove your task from your array.
 
 **⚛️ Bonus**
