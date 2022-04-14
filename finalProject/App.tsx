@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, SafeAreaView, ScrollView, Keyboard, TouchableOpacity, TextInput, KeyboardAvoidingView, Platform, Image, LayoutAnimation, Animated } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, ScrollView, Keyboard, TouchableOpacity, TextInput, KeyboardAvoidingView, Platform, Image, LayoutAnimation, Animated, Alert } from 'react-native';
 import {LinearGradient} from 'expo-linear-gradient';
 import Task from './Components/Task'
 
@@ -8,14 +8,11 @@ interface BottomProps {
   task: string
   setTask: Function
   addTask: Function
-  selectedColor: string
-  setSelectedColor: (color: string) => void
 }
 
 interface ListProps {
   allTasks: Array<string>
   removeTask: (index: number) => void
-  selectedColor: string
 }
 
 
@@ -43,7 +40,7 @@ function DisplayList(props: ListProps)
         props.allTasks.map((item, index) => {
           return (
           <View key={index}>
-            <Task text={item} removeFunction={() => props.removeTask(index)} color={props.selectedColor} index={index}/>
+            <Task text={item} removeFunction={() => props.removeTask(index)} index={index}/>
           </View>)
         }
         )
@@ -56,7 +53,6 @@ function DisplayList(props: ListProps)
 
 export default function App() {
   const [task, setTask] = useState("")
-  const [selectedColor, setSelectedColor] = useState("#8BC34A")
   const [allTasks, setAllTasks] = useState<Array<string>>([])
 
   const setAnimation = () => {
@@ -78,16 +74,32 @@ export default function App() {
   }
 
   const removeTask = (index: number) => {
-    let copyItems = [...allTasks]
-    copyItems.splice(index, 1)
-    setAllTasks(copyItems)
+    Alert.alert(
+      "Supprimer",
+      "Vous allez supprimer la tâche \"" + allTasks[index] + "\", voulez vous continuer ?",
+      [
+        {
+          text: "Annuler",
+          style: "cancel"
+        },
+        {
+          text: "Supprimer",
+          onPress: () => {
+            let copyItems = [...allTasks]
+            copyItems.splice(index, 1)
+            setAllTasks(copyItems)
+          },
+          style: "destructive"
+        }
+      ]
+    )
   }
 
   return (
     <LinearGradient colors={["#FFE5D4", "#FFB5A4"]} style={styles.container}>
       <SafeAreaView style={styles.mainView}>
         <Text style={styles.title}>Todo List</Text>
-        {allTasks.length > 0 && <DisplayList allTasks={allTasks} removeTask={removeTask} selectedColor={selectedColor}/>}
+        {allTasks.length > 0 && <DisplayList allTasks={allTasks} removeTask={removeTask}/>}
         {allTasks.length === 0 &&
         <KeyboardAvoidingView
           behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -95,8 +107,9 @@ export default function App() {
         >
           <Image source={require("./assets/illustration.png")} style={styles.image}/>
         </KeyboardAvoidingView>}
-        <BottomScreen task={task} setTask={setTask} addTask={addTask} selectedColor={selectedColor} setSelectedColor={setSelectedColor} />
+        <BottomScreen task={task} setTask={setTask} addTask={addTask} />
       </SafeAreaView>
+      <StatusBar style="auto"/>
     </LinearGradient>
   );
 }
