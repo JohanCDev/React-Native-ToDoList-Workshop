@@ -14,6 +14,12 @@ In this workshop you will:
 
 It's used to develop applications on many operating systems with React framework along with native platform capabilities.
 
+## What is TypeScript
+
+[TypeScript](https://www.typescriptlang.org) is a typed programming language, it helps you to know when you are doing things that you shouldn't with variables (like changing their type when you don't want to) *✨JavaScript✨*.
+
+Try to do the workshop with this overlay, it doesn't change much on a small project like this one but it's a good habit to adopt.
+
 ## What is Expo
 
 [Expo](https://expo.dev) is an open-source platform for making universal native apps for Android, iOS, and the web with JavaScript and React.
@@ -97,10 +103,7 @@ From now you should start to have a heavy main function. If you haven't already,
 
 **Next**
 
-Create a new file called:
-
-- Task.tsx if you are using TypeScript
-- Task.jsx if you are using JavaScript
+Create a new file called `Task.tsx`.
 
 Create your own Component in this file simply by creating a function called `Task`.
 
