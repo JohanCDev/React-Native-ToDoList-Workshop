@@ -133,7 +133,7 @@ Add a shadow to your Component to make it *floating* on your screen
 
 You should now see a beautiful to do list, only the front end but it looks great !
 
-![Alt Text](./ScreenShots/Component.jpeg)
+![Alt Text](./ScreenShots/Component.png)
 
 ## Step 7 - Remove taks when they are done
 
@@ -145,6 +145,7 @@ remove your task from your array.
 Imagine pressing the removing button not on purpose... Not cool uh ?
 Try to display an alert that waits for a validation from the user 😉
 
+![Alt Text](./ScreenShots/AlertBox.png)
 ## Step 8 - Add a welcoming page
 
 Your app seems a little bit sad and empty without any tasks, how could you fix that ?
