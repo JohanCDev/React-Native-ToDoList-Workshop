@@ -1,3 +1,4 @@
+import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 
@@ -7,6 +8,7 @@ export default function App() {
       <SafeAreaView style={styles.mainView}>
         <Text style={styles.title}>Todo List</Text>
       </SafeAreaView>
+      <StatusBar style="auto"/>
     </LinearGradient>
   );
 }
