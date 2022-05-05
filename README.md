@@ -38,7 +38,7 @@ Then, scan the qr code on your phone to have your new application. (On your came
 
 ## Step 1 - Create your first Application
 
-Start by creating a Typescript basic app with `expo init MyToDoListApp`
+Start by creating a Typescript basic app with `expo init MyToDoListApp`. Select the `blank TypeScript` option
 
 Try to launch it on your phone, you should see something like this
 
