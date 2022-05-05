@@ -60,6 +60,8 @@ One of the power of React-Native is it's community, developers around the world 
 
 A famous one helps you doing a linear gradient for your views, try to install it and use it for your background if you want !
 
+**💡 The most famous is called react-native-linear-gradient but remember, we are using expo**
+
 You can easily have something like this.
 
 ![Alt Text](./ScreenShots/StyledView.jpeg)
