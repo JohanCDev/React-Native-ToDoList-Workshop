@@ -26,16 +26,6 @@ Try to do the workshop with this overlay, it doesn't change much on a small proj
 
 It's used to easily translate React framework to the native language of your device.
 
-## How will we compile ?
-
-We simply have to launch a packager between expo and your phone.
-
-To do this, simply run `expo start`.
-
-Press `d` to open developer tools and enable `tunnel mode`.
-
-Then, scan the qr code on your phone to have your new application. (On your camera for iOS and in Expo App for Android)
-
 ## Step 1 - Create your first Application
 
 Start by creating a Typescript basic app with `expo init MyToDoListApp`. Select the `blank TypeScript` option
@@ -43,6 +33,18 @@ Start by creating a Typescript basic app with `expo init MyToDoListApp`. Select 
 Try to launch it on your phone, you should see something like this
 
 ![Alt Text](./ScreenShots/Basic.jpeg)
+
+## How will we compile ?
+
+We simply have to launch a packager between expo and your phone.
+
+To do this, simply run `expo start`.
+
+If you have an error with @empo/ngrok you might want to run this command `npm install @expo/ngrok@2.4.3`
+
+Press `d` to open developer tools and enable `tunnel mode`.
+
+Then, scan the qr code on your phone to have your new application. (On your camera for iOS and in Expo App for Android)
 
 Congrats ! You created an application !
 
