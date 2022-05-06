@@ -30,10 +30,6 @@ It's used to easily translate React framework to the native language of your dev
 
 Start by creating a Typescript basic app with `expo init MyToDoListApp`. Select the `blank TypeScript` option
 
-Try to launch it on your phone, you should see something like this
-
-![Alt Text](./ScreenShots/Basic.jpeg)
-
 ## How will we compile ?
 
 We simply have to launch a packager between expo and your phone.
@@ -45,6 +41,10 @@ If you have an error with @empo/ngrok you might want to run this command `npm in
 Press `d` to open developer tools and enable `tunnel mode`.
 
 Then, scan the qr code on your phone to have your new application. (On your camera for iOS and in Expo App for Android)
+
+Your phone should look like this
+
+![Alt Text](./ScreenShots/Basic.jpeg)
 
 Congrats ! You created an application !
 
