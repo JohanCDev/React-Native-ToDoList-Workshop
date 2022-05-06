@@ -36,7 +36,7 @@ We simply have to launch a packager between expo and your phone.
 
 To do this, simply run `expo start`.
 
-If you have an error with @empo/ngrok you might want to run this command `npm install @expo/ngrok@2.4.3`
+If you have an error with @empo/ngrok you might want to run this command `sudo npm install --global @expo/ngrok@2.4.3`
 
 Press `d` to open developer tools and enable `tunnel mode`.
 
